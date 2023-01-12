@@ -11,23 +11,23 @@ To familiarize yourself with Jax/Flax, I would recommend this [notebook](https:/
 
 [Lilian Weng's blog](https://lilianweng.github.io/posts/2018-10-13-flow-models/): Good rundown of the theory and many of the common functions. 
 
-[Eric Jang's blog](https://blog.evjang.com/2018/01/nf1.html): Theory and a tensor-flow (🤮) implementation. I found the code hard to follow since a lot of magic happens in tensor-flow. Eric has since made a pure [Jax tutorial](https://blog.evjang.com/2019/07/nf-jax.html) as well. 
+[Eric Jang's blog](https://blog.evjang.com/2018/01/nf1.html): Theory and a tensor-flow (🤮) implementation. I found the code hard to follow since a lot of magic happens in tensor-flow. Eric has since made a pure [Jax tutorial](https://blog.evjang.com/2019/07/nf-jax.html) as well, which I highly recommend once you're comfortable with the theory (and if you don't want to bother with flax/optax).  
 
 [UVADLC notebook](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial11/NF_image_modeling.html): Helpful, but much of the content focuses on dealing with the specifics of image data processing and advanced architectures, which can make learning the fundamentals very difficult. I've simplified their code for parts of this tutorial. 
 
-[NF using Pyro library](https://pyro.ai/examples/normalizing_flows_i.html): Pyro tutorials are great in that they focus on conveying a fundamental understanding of the topic rather than the specifics of the library, but I think implementing your own solution in a simplified setting is necessary before using any libraries.  
+[Normalizing FLows using Pyro library](https://pyro.ai/examples/normalizing_flows_i.html): Pyro tutorials are great in that they focus on conveying a fundamental understanding of the topic rather than the specifics of the library, but I think implementing your own solution in a simplified setting is necessary before using any libraries.  
 
 
 I will briefly go over the basic theory behind normalizing flows as a refresher, and also to establish the variable names that  will be used in the code. 
 
 ## Change of Variables
-To reiterate the example given by Eric Jang, lets say you have a continuous uniform random variable $X$ and its probability density function (PDF) $P_x(x)$ where $x$ is a real valued output of $X$.  Lets say we applied a function $f(g) = 2*g + 1$ to the outputs of $X$. The result can be treated  as a new random variable $Y$ with its own PDF function $P_y(y)$. Where $y$ is the output of $Y$, and $y=2x+1$.  Change of variables theorem helps define $P_y$. 
+To reiterate the example given by Eric Jang, lets say you have a continuous uniform random variable $X$ and its probability density function (PDF) $P_x$ where $x$ is a real valued output of $X$.  Lets say we applied a function $f(g) = 2*g + 1$ to the outputs of $X$. The result can be treated  as a new random variable $Y$ with its own PDF function $P_y$. Where $y$ is the output of $Y$, and $y=2x+1$.  Change of variables theorem helps define $P_y$. 
 
-Let's say we give $X$ the range of $[0,1]$, we know what the PDF curve for $X$ would look like. 
+Let's say we give $X$ the range of $[0,1]$, we know what the PDF for $X$ would look like, since it's uniform. 
 ![](/images/pdf_x.png)
 
 What would this distribution look like for $Y$? 
-Well, it should be clear that given the range of X, $Y$ would have the range $[1,3]$. In this case, it's easy to calculate $P_y$ without change of variables theorem. 
+Well, it should be clear that given the range of $X$, $Y$ would have the range $[1,3]$. In this case, it's easy to calculate $P_y$ without change of variables theorem. 
 Intuitively, $P_y$ is uniform and covers the values between 1 and 3. Since the area under the curve should sum up to 1, then the distribution for $Y$ should look something like the figure below. 
 
 ![](/images/pdf_y.png)
@@ -37,7 +37,7 @@ But can we prove this mathematically? Yes!
 
 \begin{gather}
     \text{This is not a complete proof!}\\
-    p_y(y)dy = p_x(x)dx \text{ (many steps skipped) Both integrate to 1} \\
+    p_y(y)dy = p_x(x)dx \text{skipping a few steps!} \\
     p_y(y) = p_x(x) |\frac{dx}{dy}|\\
     p_y(y) = p_x(x) |(\frac{dy}{dx})^{-1}|\\
     p_y(y) = p_x(x) |(\frac{df(x))}{dx})^{-1}|\\
