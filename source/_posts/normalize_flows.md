@@ -24,20 +24,21 @@ I will briefly go over the basic theory behind normalizing flows as a refresher,
 To reiterate the example given by Eric Jang, lets say you have a continuous uniform random variable $X$ and its probability density function (PDF) $P_x$ where $x$ is a real valued output of $X$.  Lets say we applied a function $f(g) = 2*g + 1$ to the outputs of $X$. The result can be treated  as a new random variable $Y$ with its own PDF function $P_y$. Where $y$ is the output of $Y$, and $y=2x+1$.  Change of variables theorem helps define $P_y$. 
 
 Let's say we give $X$ the range of $[0,1]$, we know what the PDF for $X$ would look like, since it's uniform. 
-![](/images/pdf_x.png)
+<!-- ![](/images/pdf_x.png ) -->
+<img src="/images/pdf_x.png" width="400">
 
 What would this distribution look like for $Y$? 
 Well, it should be clear that given the range of $X$, $Y$ would have the range $[1,3]$. In this case, it's easy to calculate $P_y$ without change of variables theorem. 
 Intuitively, $P_y$ is uniform and covers the values between 1 and 3. Since the area under the curve should sum up to 1, then the distribution for $Y$ should look something like the figure below. 
 
-![](/images/pdf_y.png)
+<img src="/images/pdf_y.png" width="400">
 
 
 But can we prove this mathematically? Yes! 
 
 \begin{gather}
     \text{This is not a complete proof!}\\
-    p_y(y)dy = p_x(x)dx \text{skipping a few steps!} \\
+    p_y(y)dy = p_x(x)dx \text{ skipping a few steps!} \\
     p_y(y) = p_x(x) |\frac{dx}{dy}|\\
     p_y(y) = p_x(x) |(\frac{dy}{dx})^{-1}|\\
     p_y(y) = p_x(x) |(\frac{df(x))}{dx})^{-1}|\\
