@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You also need to know">
+    <meta name="description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. The full notebook can be found on github. It will assume some prior knowledge of Jax&#x2F;Flax an">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Normalizing Flows, a Simple Example">
 <meta property="og:url" content="http://imilas.github.io/2023/01/10/normalize_flows/index.html">
 <meta property="og:site_name" content="Amir&#39;s Blog">
-<meta property="og:description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You also need to know">
+<meta property="og:description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. The full notebook can be found on github. It will assume some prior knowledge of Jax&#x2F;Flax an">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://imilas.github.io/images/pdf_x.png">
 <meta property="og:image" content="http://imilas.github.io/images/pdf_y.png">
@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/relu_effect.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/anim.gif">
 <meta property="article:published_time" content="2023-01-11T04:17:26.000Z">
-<meta property="article:modified_time" content="2023-01-13T18:22:24.312Z">
+<meta property="article:modified_time" content="2023-01-13T18:25:11.062Z">
 <meta property="article:author" content="Amir Salimi">
 <meta property="article:tag" content="jax normalizing flows">
 <meta name="twitter:card" content="summary">
@@ -251,13 +251,14 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
 
   <div class="content" itemprop="articleBody">
     <p>This post is meant as an exercise in implementing a generative
-normalizing flows model in a 2D environment. It will assume some prior
-knowledge of Jax/Flax and normalizing flows. You also need to know (or
-be willing to learn) some fundamental concepts in multi-variable
-calculus, probabilities, etc. I will cite the resources that I found
-helpful as needed. The full notebook can be found on <a target="_blank" rel="noopener" href="https://github.com/imilas/normalizing-flows-jax-tutorial/blob/main/jax_flow.ipynb">github</a>.
-Personally, I find it's best to set aside a few days for each topic
-separately, rather than trying to learn multiple things at once.</p>
+normalizing flows model in a 2D environment. The full notebook can be
+found on <a target="_blank" rel="noopener" href="https://github.com/imilas/normalizing-flows-jax-tutorial/blob/main/jax_flow.ipynb">github</a>.
+It will assume some prior knowledge of Jax/Flax and normalizing flows.
+You also need to know (or be willing to learn) some fundamental concepts
+in multi-variable calculus, probabilities, etc. I will cite the
+resources that I found helpful as needed. Personally, I find it's best
+to set aside a few days for each topic separately, rather than trying to
+learn multiple things at once.</p>
 <p>To familiarize yourself with Jax/Flax, I would recommend this <a target="_blank" rel="noopener" href="https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/JAX/tutorial2/Introduction_to_JAX.html">notebook</a>
 by University of Amsterdam's Deep learning course (which also has other
 must read resources included). The Jax documentation is also essential.
