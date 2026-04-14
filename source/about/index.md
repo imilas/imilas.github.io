@@ -4,8 +4,8 @@ date: 2023-01-10 15:17:42
 ---
 PhD student at University of Alberta. 
 
-Interested in audio and time-series. 
+Interested in sound and music. 
 
 My supervisors are Abram Hindle and Osmar Zaiane. 
 
-Email me at ${first name's first letter}{lastname}@ualberta.ca
+Email me at {a}{lastname}@ualberta.ca
