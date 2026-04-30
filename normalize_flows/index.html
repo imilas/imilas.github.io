@@ -9,7 +9,7 @@
     <meta name="description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You need to have a go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Normalizing Flows, a Simple Example">
-<meta property="og:url" content="http://imilas.github.io/2023/01/10/normalize_flows/index.html">
+<meta property="og:url" content="http://imilas.github.io/normalize_flows/index.html">
 <meta property="og:site_name" content="Amir&#39;s Blog">
 <meta property="og:description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You need to have a go">
 <meta property="og:locale" content="en_US">
@@ -206,34 +206,15 @@ mjx-container[display="true"] + br {
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Previous post" href="/2026/04/20/deadspace/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Previous post" href="/deadspace/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
       <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
     </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://imilas.github.io/2023/01/10/normalize_flows/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://imilas.github.io/2023/01/10/normalize_flows/&text=Normalizing Flows, a Simple Example"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://imilas.github.io/2023/01/10/normalize_flows/&is_video=false&description=Normalizing Flows, a Simple Example"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Normalizing Flows, a Simple Example&body=Check out this article: http://imilas.github.io/2023/01/10/normalize_flows/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://imilas.github.io/2023/01/10/normalize_flows/&name=Normalizing Flows, a Simple Example&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://imilas.github.io/2023/01/10/normalize_flows/&t=Normalizing Flows, a Simple Example"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
     
     
       <div id="toc">
@@ -249,17 +230,7 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
         
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    
-    <h1 class="posttitle p-name" itemprop="name headline">
-        Normalizing Flows, a Simple Example
-    </h1>
-
-
-
-    <div class="meta">
-      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span class="p-name" itemprop="name">Amir Salimi</span>
-      </span>
+    <div style="display: flex; align-items: baseline; gap: 0.8rem; font-size: 0.85em;">
       
     <div class="postdate">
       
@@ -269,6 +240,15 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
     </div>
 
 
+      
+    <h1 class=" p-name" itemprop="name headline">
+        Normalizing Flows, a Simple Example
+    </h1>
+
+
+
+    </div>
+    <div class="meta">
       
 
       
@@ -512,29 +492,11 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
       </div>
     
 
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://imilas.github.io/2023/01/10/normalize_flows/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://imilas.github.io/2023/01/10/normalize_flows/&text=Normalizing Flows, a Simple Example"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://imilas.github.io/2023/01/10/normalize_flows/&is_video=false&description=Normalizing Flows, a Simple Example"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Normalizing Flows, a Simple Example&body=Check out this article: http://imilas.github.io/2023/01/10/normalize_flows/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://imilas.github.io/2023/01/10/normalize_flows/&title=Normalizing Flows, a Simple Example"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://imilas.github.io/2023/01/10/normalize_flows/&name=Normalizing Flows, a Simple Example&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://imilas.github.io/2023/01/10/normalize_flows/&t=Normalizing Flows, a Simple Example"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
     <div id="actions-footer">
         <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
         
           <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
         
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
         <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
     </div>
 
