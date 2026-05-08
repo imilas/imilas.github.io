@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.madewithdrama.love/lonewolf/</loc>
+    
+    <lastmod>2026-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.madewithdrama.love/paul/</loc>
     
     <lastmod>2026-05-06</lastmod>
@@ -94,7 +103,7 @@
 
   <url>
     <loc>https://www.madewithdrama.love/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,7 +111,7 @@
   
   <url>
     <loc>https://www.madewithdrama.love/tags/jax-normalizing-flows/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -111,7 +120,7 @@
   
   <url>
     <loc>https://www.madewithdrama.love/categories/short/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
