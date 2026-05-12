@@ -1,0 +1,5 @@
+{% for post in posts %}{{ post.permalink | replace('/index.html', '/') | uriencode }}
+{% endfor %}{{ config.url | uriencode }}
+{% for tag in tags %}{{ tag.permalink | replace('/index.html', '/') | uriencode }}
+{% endfor %}{% for cat in categories %}{{ cat.permalink | replace('/index.html', '/') | uriencode }}
+{% endfor %}
