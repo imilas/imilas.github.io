@@ -8,21 +8,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="Amir Salimi&#39;s  blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Amir&#39;s Blog">
-<meta property="og:url" content="http://imilas.github.io/archives/2023/index.html">
+    <meta name="description" content="my favorite hacker news comment (show screenshot)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="favorite HN comment">
+<meta property="og:url" content="http://imilas.github.io/2026/03/29/fav_hn_comment/index.html">
 <meta property="og:site_name" content="Amir&#39;s Blog">
-<meta property="og:description" content="Amir Salimi&#39;s  blog">
+<meta property="og:description" content="my favorite hacker news comment (show screenshot)">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://imilas.github.io/images/xplanet.jpg">
+<meta property="article:published_time" content="2026-03-29T18:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-12T22:21:00.625Z">
 <meta property="article:author" content="Amir Salimi">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://imilas.github.io/images/xplanet.jpg">
     
-    <link rel="canonical" href="http://imilas.github.io/archives/2023/">
+    <link rel="canonical" href="http://imilas.github.io/2026/03/29/fav_hn_comment/">
     <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;😿&lt;/text&gt;&lt;/svg&gt;">
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;😿&lt;/text&gt;&lt;/svg&gt;">
     <!-- title -->
-    <title>Writing: 2023</title>
+    <title>favorite HN comment</title>
     <!-- async scripts -->
     <!-- Google Analytics -->
 
@@ -73,32 +77,31 @@
 </header>
 
         
-        <div id="archive">
-  <ul class="post-list">
-    
-    
-    
-    
-      
-      
-      
-      
-        <li class="post-year"><h2>2023</h2></li>
-      
-      <li class="post-item">
-        <span>
-    
-        <a class="" href="/2023/01/10/normalize_flows/">Normalizing Flows, a Simple Example</a>
-    
-
-
-</span>
-      </li>
-    
-  </ul>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   
 
+  <div class="content e-content" itemprop="articleBody">
+    <p>my favorite hacker news <a
+target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=24034256">comment</a>
+(<span class="hide-img-wrapper"><a href="#" id="link-img-9c82l4tzr" class="show-img-link" onclick="var img=document.getElementById('img-9c82l4tzr');var lnk=document.getElementById('link-img-9c82l4tzr');if(img.style.display==='none'){img.style.display='block';lnk.textContent='hide screenshot';}else{img.style.display='none';lnk.textContent='show screenshot';}return false;">show screenshot</a><span id="img-9c82l4tzr" style="display:none;"><img src="/images/xplanet.jpg" alt="do i need this text" ></span></span>)</p>
+
+  </div>
+</article>
+
+
+<div style="margin-top: 1rem;">
+  <div style="border: 1px solid; display: inline-flex; gap: 0.8rem; padding: 0.15rem 0.6rem;">
+    
+      <span style="opacity: 0.3;">&lt;&lt;</span>
+    
+    
+      <a href="/2026/04/20/deadspace/" style="text-decoration: none;">&gt;&gt;</a>
+    
+  </div>
 </div>
+
+
+
 
         
         <footer id="footer">
@@ -138,6 +141,29 @@
 
 
 <!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
 
 
 <script src="/js/main.js"></script>

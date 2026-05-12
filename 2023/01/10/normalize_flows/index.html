@@ -11,12 +11,12 @@
     <meta name="description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You need to have a go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Normalizing Flows, a Simple Example">
-<meta property="og:url" content="https://www.madewithdrama.love/normalize_flows/index.html">
-<meta property="og:site_name" content="Amir Salimi&#39;s blog">
+<meta property="og:url" content="http://imilas.github.io/2023/01/10/normalize_flows/index.html">
+<meta property="og:site_name" content="Amir&#39;s Blog">
 <meta property="og:description" content="This post is meant as an exercise in implementing a generative normalizing flows model in a 2D environment. It will assume some prior knowledge of Jax&#x2F;Flax and normalizing flows. You need to have a go">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://www.madewithdrama.love/images/pdf_x.png">
-<meta property="og:image" content="https://www.madewithdrama.love/images/pdf_y.png">
+<meta property="og:image" content="http://imilas.github.io/images/pdf_x.png">
+<meta property="og:image" content="http://imilas.github.io/images/pdf_y.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/pdf_x.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/pdf_y.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/target_dist.png">
@@ -24,13 +24,13 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/relu_effect.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/imilas/normalizing-flows-jax-tutorial/main/images/anim.gif">
 <meta property="article:published_time" content="2023-01-11T04:17:26.000Z">
-<meta property="article:modified_time" content="2025-06-18T18:55:07.515Z">
+<meta property="article:modified_time" content="2026-05-12T19:32:26.907Z">
 <meta property="article:author" content="Amir Salimi">
 <meta property="article:tag" content="jax normalizing flows">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.madewithdrama.love/images/pdf_x.png">
+<meta name="twitter:image" content="http://imilas.github.io/images/pdf_x.png">
     
-    <link rel="canonical" href="https://www.madewithdrama.love/normalize_flows/">
+    <link rel="canonical" href="http://imilas.github.io/2023/01/10/normalize_flows/">
     <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;😿&lt;/text&gt;&lt;/svg&gt;">
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;😿&lt;/text&gt;&lt;/svg&gt;">
     <!-- title -->
@@ -165,7 +165,8 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="Amir's Blog" type="application/atom+xml">
+</head>
 
 <body class="max-width mx-auto px3 ltr">
     
@@ -177,7 +178,7 @@ mjx-container[display="true"] + br {
     <span id="nav">
       <ul>
         <!--
-       --><li><a href="/">home</a></li><!--
+       --><li><a href="/">main</a></li><!--
      --><!--
        --><li><a href="/publications/">publications</a></li><!--
      --><!--
@@ -193,7 +194,7 @@ mjx-container[display="true"] + br {
     <span id="actions">
       <ul>
         
-        <li><a class="icon" aria-label="Previous post" href="/fav_hn_comment/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Previous post" href="/publications/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
@@ -213,7 +214,7 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
 </div>
 
     
-    <div class="content index py4 ">
+    <div class="content index py2 ">
         
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   
@@ -427,7 +428,7 @@ than 19 scatter plots: <img src="https://raw.githubusercontent.com/imilas/normal
     <div id="nav-footer" style="display: none">
       <ul>
         
-          <li><a href="/">home</a></li>
+          <li><a href="/">main</a></li>
         
           <li><a href="/publications/">publications</a></li>
         
@@ -465,7 +466,7 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
     <nav>
       <ul>
         <!--
-       --><li><a href="/">home</a></li><!--
+       --><li><a href="/">main</a></li><!--
      --><!--
        --><li><a href="/publications/">publications</a></li><!--
      --><!--
@@ -474,7 +475,8 @@ Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#d
        --><li><a href="/archives/">long posts</a></li><!--
      --><!--
        --><li><a href="/short/">short posts</a></li><!--
-     -->
+     --><!--
+     --><li><a href="/atom.xml">[rss]</a></li>
       </ul>
     </nav>
   </div>
