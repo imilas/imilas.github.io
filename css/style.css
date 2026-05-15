@@ -530,23 +530,10 @@ body {
 .content a {
   color: #6ba3f5;
   text-decoration: none;
-  background-image: linear-gradient(transparent, transparent 5px, #6ba3f5 5px, #6ba3f5);
-  background-position: bottom;
-  background-size: 100% 6px;
-  background-repeat: repeat-x;
+  background-image: none;
 }
 .content a:hover {
-  background-image: linear-gradient(transparent, transparent 4px, #6ba3f5 4px, #6ba3f5);
-}
-.content .e-content a {
-  color: #c9cacc;
-  background-image: linear-gradient(transparent, transparent 5px, #c9cacc 5px, #c9cacc);
-  background-position: bottom;
-  background-size: 100% 6px;
-  background-repeat: repeat-x;
-}
-.content .e-content a:hover {
-  background-image: linear-gradient(transparent, transparent 4px, #6ba3f5 4px, #6ba3f5);
+  background-image: none;
 }
 .content a.icon {
   background: none;
@@ -1082,6 +1069,7 @@ body {
 @media (min-width: 480px) {
   .post-list .post-item {
     display: flex;
+    gap: 0.8rem;
     margin-bottom: 5px;
   }
   .post-list .post-item .meta {
@@ -1677,4 +1665,7 @@ code {
 }
 #header-post #actions {
   direction: ltr !important;
+}
+#header-post #actions .post-item p {
+  margin-bottom: 0;
 }

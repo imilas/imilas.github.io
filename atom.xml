@@ -10,7 +10,26 @@
   <rights>All rights reserved 2026, Amir Salimi</rights>
   <subtitle>Amir Salimi's  blog</subtitle>
   <title>Amir's Blog</title>
-  <updated>2026-05-12T20:45:50.183Z</updated>
+  <updated>2026-05-15T20:54:43.824Z</updated>
+  <entry>
+    <author>
+      <name>Amir Salimi</name>
+    </author>
+    <category term="poem" scheme="http://imilas.github.io/categories/poem/"/>
+    <content>
+      <![CDATA[<p>The swaying of the trees assaults my senses.</p><p>The green foliage, the jarring wisps of wind, the unwelcome companyof endearing critters.</p><p>I miss the bowlegged figures, the mephitic fumes, the idle threatsand clenched fists.</p><p>I want to roam the friendly streets, respite amongst the shards andneedles. Let the soothing shrieks wash over me.</p><p>I miss the quotidian outrage.</p><p>The starlit sky traps me in a kennel of endless possibilities. Leavesand butterflies smother the branches like a cancer. With every breath,the fresh air poisons my lungs.</p><p>I miss the lively coughs, the nightmares. I miss drifting off toroaming speakers and dreams of worn off engine belts. No more weepinglesions, no more tears of joy.</p><p><a href="https://uvb-76music.bandcamp.com/album/uvb76-027">citychaos</a></p>]]>
+    </content>
+    <id>http://imilas.github.io/2026/05/15/city_zen/</id>
+    <link href="http://imilas.github.io/2026/05/15/city_zen/"/>
+    <published>2026-05-15T06:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>The swaying of the trees assaults my senses.</p>
+<p>The green foliage, the jarring wisps of wind, the unwelcome company
+of endearing crit]]>
+    </summary>
+    <title>City zen</title>
+    <updated>2026-05-15T20:54:43.824Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Amir Salimi</name>
@@ -91,13 +110,13 @@ what are those dusty grainy piles called again?
     </author>
     <category term="short" scheme="http://imilas.github.io/categories/short/"/>
     <content>
-      <![CDATA[<p>me when I use [SIC] <span class="hide-img-wrapper"><a href="#" id="link-img-37o0nn9e0" class="show-img-link" onclick="var img=document.getElementById('img-37o0nn9e0');var lnk=document.getElementById('link-img-37o0nn9e0');if(img.style.display==='none'){img.style.display='block';lnk.textContent='hide image';}else{img.style.display='none';lnk.textContent='show image';}return false;">show image</a><span id="img-37o0nn9e0" style="display:none;"><img src="/images/how_to_break_up_cat_fights.jpg" alt="i'm the left cat" width="400"></span></span></p>]]>
+      <![CDATA[<p>me when I use [SIC] <span class="hide-img-wrapper"><a href="#" id="link-img-wcl8d7ucm" class="show-img-link" onclick="var img=document.getElementById('img-wcl8d7ucm');var lnk=document.getElementById('link-img-wcl8d7ucm');if(img.style.display==='none'){img.style.display='block';lnk.textContent='hide image';}else{img.style.display='none';lnk.textContent='show image';}return false;">show image</a><span id="img-wcl8d7ucm" style="display:none;"><img src="/images/how_to_break_up_cat_fights.jpg" alt="i'm the left cat" width="400"></span></span></p>]]>
     </content>
     <id>http://imilas.github.io/2026/04/28/sic/</id>
     <link href="http://imilas.github.io/2026/04/28/sic/"/>
     <published>2026-04-28T16:01:00.000Z</published>
     <summary>
-      <![CDATA[<p>me when I use [SIC] <span class="hide-img-wrapper"><a href="#" id="link-img-37o0nn9e0" class="show-img-link" onclick="var img=document.ge]]>
+      <![CDATA[<p>me when I use [SIC] <span class="hide-img-wrapper"><a href="#" id="link-img-wcl8d7ucm" class="show-img-link" onclick="var img=document.ge]]>
     </summary>
     <title>SIC</title>
     <updated>2026-05-01T17:01:12.387Z</updated>
@@ -125,7 +144,7 @@ what are those dusty grainy piles called again?
     </author>
     <category term="short" scheme="http://imilas.github.io/categories/short/"/>
     <content>
-      <![CDATA[<p>my favorite hacker news <ahref="https://news.ycombinator.com/item?id=24034256">comment</a>(<span class="hide-img-wrapper"><a href="#" id="link-img-9c82l4tzr" class="show-img-link" onclick="var img=document.getElementById('img-9c82l4tzr');var lnk=document.getElementById('link-img-9c82l4tzr');if(img.style.display==='none'){img.style.display='block';lnk.textContent='hide screenshot';}else{img.style.display='none';lnk.textContent='show screenshot';}return false;">show screenshot</a><span id="img-9c82l4tzr" style="display:none;"><img src="/images/xplanet.jpg" alt="do i need this text" ></span></span>)</p>]]>
+      <![CDATA[<p>my favorite hacker news <ahref="https://news.ycombinator.com/item?id=24034256">comment</a>(<span class="hide-img-wrapper"><a href="#" id="link-img-5bc98ddph" class="show-img-link" onclick="var img=document.getElementById('img-5bc98ddph');var lnk=document.getElementById('link-img-5bc98ddph');if(img.style.display==='none'){img.style.display='block';lnk.textContent='hide screenshot';}else{img.style.display='none';lnk.textContent='show screenshot';}return false;">show screenshot</a><span id="img-5bc98ddph" style="display:none;"><img src="/images/xplanet.jpg" alt="do i need this text" ></span></span>)</p>]]>
     </content>
     <id>http://imilas.github.io/2026/03/29/fav_hn_comment/</id>
     <link href="http://imilas.github.io/2026/03/29/fav_hn_comment/"/>
@@ -144,20 +163,20 @@ href="https://news.ycombinator.com/item?id=24034256">comment</a>
     </author>
     <category term="page" scheme="http://imilas.github.io/categories/page/"/>
     <content>
-      <![CDATA[<p>I make music.</p><h2 id="releases">Releases</h2><ul><li><ahref="https://diffrent.bandcamp.com/album/revolution-of-the-giraffe">Revolutionof the Giraffe</a> -- single with <ahref="https://linktr.ee/fearfulmusic">Fearful</a> on Diffrent Music</li><li><a href="https://diffrent.bandcamp.com/album/awra003">AWRA003</a> --EP on Diffrent Music</li><li><a href="https://diffrent.bandcamp.com/album/awra002">AWRA002</a> --EP on Diffrent Music</li></ul>]]>
+      <![CDATA[<ul><li><ahref="https://diffrent.bandcamp.com/album/revolution-of-the-giraffe">Revolutionof the Giraffe</a> -- single with <ahref="https://linktr.ee/fearfulmusic">Fearful</a> on Diffrent Music</li><li><a href="https://diffrent.bandcamp.com/album/awra003">AWRA003</a> --EP on Diffrent Music</li><li><a href="https://diffrent.bandcamp.com/album/awra002">AWRA002</a> --EP on Diffrent Music</li></ul>]]>
     </content>
     <id>http://imilas.github.io/music/</id>
     <link href="http://imilas.github.io/music/"/>
     <published>2026-01-01T07:00:00.000Z</published>
     <summary>
-      <![CDATA[<p>I make music.</p>
-<h2 id="releases">Releases</h2>
-<ul>
+      <![CDATA[<ul>
 <li><a
-href="https://diffrent.bandcamp.com/album/revolution-of-the-giraffe">Revolu]]>
+href="https://diffrent.bandcamp.com/album/revolution-of-the-giraffe">Revolution
+of the Giraffe</a> -- single with <a
+href="https]]>
     </summary>
     <title>music</title>
-    <updated>2026-05-12T20:27:59.884Z</updated>
+    <updated>2026-05-15T20:37:44.697Z</updated>
   </entry>
   <entry>
     <author>

@@ -169,53 +169,31 @@ mjx-container[display="true"] + br {
 </head>
 
 <body class="max-width mx-auto px3 ltr">
-    
-      <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-        <!--
-       --><li><a href="/">main</a></li><!--
-     --><!--
-       --><li><a href="/publications/">publications</a></li><!--
-     --><!--
-       --><li><a href="/music/">music</a></li><!--
-     --><!--
-       --><li><a href="/archives/">long posts</a></li><!--
-     --><!--
-       --><li><a href="/short/">short posts</a></li><!--
-     -->
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li><a class="icon" aria-label="Previous post" href="/publications/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-    </span>
-    
-    
-      <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#change-of-variables"><span class="toc-number">1.</span> <span class="toc-text">Change of Variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code-for-1d-example"><span class="toc-number">2.</span> <span class="toc-text">Code for 1D Example:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#normalizing-flows-in-2d-with-jax"><span class="toc-number">3.</span> <span class="toc-text">Normalizing Flows in 2D with
-Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#defining-functions"><span class="toc-number">4.</span> <span class="toc-text">Defining Functions</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#relu"><span class="toc-number">4.1.</span> <span class="toc-text">Relu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#coupling-layers"><span class="toc-number">4.2.</span> <span class="toc-text">Coupling Layers</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#multilayer-network"><span class="toc-number">5.</span> <span class="toc-text">MultiLayer Network</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#architecture"><span class="toc-number">5.1.</span> <span class="toc-text">Architecture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#training-and-sampling"><span class="toc-number">5.2.</span> <span class="toc-text">Training and Sampling</span></a></li></ol></li></ol>
-      </div>
-    
-  </span>
-</div>
-
-    
     <div class="content index py2 ">
-        
+        <header id="header">
+  <a class="u-url u-uid" href="/">
+  
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="/"><span class="nav-bracket">[</span>main<span class="nav-bracket">]</span></a></li><!--
+   --><!--
+     --><li><a href="/publications/"><span class="nav-bracket">[</span>publications<span class="nav-bracket">]</span></a></li><!--
+   --><!--
+     --><li><a href="/music/"><span class="nav-bracket">[</span>music<span class="nav-bracket">]</span></a></li><!--
+   --><!--
+     --><li><a href="/archives/"><span class="nav-bracket">[</span>long posts<span class="nav-bracket">]</span></a></li><!--
+   --><!--
+     --><li><a href="/short/"><span class="nav-bracket">[</span>short posts<span class="nav-bracket">]</span></a></li><!--
+   -->
+    </ul>
+  </div>
+</header>
+
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   
 
@@ -421,46 +399,6 @@ than 19 scatter plots: <img src="https://raw.githubusercontent.com/imilas/normal
 
 
 
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-        
-          <li><a href="/">main</a></li>
-        
-          <li><a href="/publications/">publications</a></li>
-        
-          <li><a href="/music/">music</a></li>
-        
-          <li><a href="/archives/">long posts</a></li>
-        
-          <li><a href="/short/">short posts</a></li>
-        
-      </ul>
-    </div>
-
-    
-    
-      <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#change-of-variables"><span class="toc-number">1.</span> <span class="toc-text">Change of Variables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#code-for-1d-example"><span class="toc-number">2.</span> <span class="toc-text">Code for 1D Example:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#normalizing-flows-in-2d-with-jax"><span class="toc-number">3.</span> <span class="toc-text">Normalizing Flows in 2D with
-Jax</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#defining-functions"><span class="toc-number">4.</span> <span class="toc-text">Defining Functions</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#relu"><span class="toc-number">4.1.</span> <span class="toc-text">Relu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#coupling-layers"><span class="toc-number">4.2.</span> <span class="toc-text">Coupling Layers</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#multilayer-network"><span class="toc-number">5.</span> <span class="toc-text">MultiLayer Network</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#architecture"><span class="toc-number">5.1.</span> <span class="toc-text">Architecture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#training-and-sampling"><span class="toc-number">5.2.</span> <span class="toc-text">Training and Sampling</span></a></li></ol></li></ol>
-      </div>
-    
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        
-          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-        
         <footer id="footer">
 <div class="footer-right">
     <nav>
