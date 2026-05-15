@@ -1053,6 +1053,15 @@ body {
 .post-list {
   padding: 0;
 }
+
+time {
+  color: red;
+}
+.post-item{
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .post-list .post-item {
   margin-bottom: 1rem;
   margin-left: 0;
