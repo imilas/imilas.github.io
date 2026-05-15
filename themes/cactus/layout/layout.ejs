@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
+<%- partial('_partial/head') %>
+<body class="max-width mx-auto px3 <%- theme.direction -%>">
+    <div class="content index py2 <%= is_home() ? 'h-card' : '' %>">
+        <%- partial('_partial/header') %>
+        <%- body %>
+        <%- partial('_partial/footer') %>
+    </div>
+    <%- partial('_partial/styles') %>
+    <%- partial('_partial/scripts') %>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<head>
+    <% var canonicalUrl = (page.canonical || full_url_for(page.path || '/')).replace(/index\.html$/, ''); %>
+    <% var emojiFavicon = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😿</text></svg>"; %>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <%- open_graph({
+        image:          thumbnail(page),
+        fb_app_id:      theme.open_graph.fb_app_id,
+        fb_admins:      theme.open_graph.fb_admins,
+        twitter_id:     theme.open_graph.twitter_id,
+        google_plus:    theme.open_graph.google_plus,
+    }) %>
+    <%- meta(page) %>
+    <link rel="canonical" href="<%= canonicalUrl %>">
+    <link rel="icon" href="<%= emojiFavicon %>">
+    <link rel="shortcut icon" href="<%= emojiFavicon %>">
+    <!-- title -->
+    <title><%= page_title() %></title>
+    <!-- async scripts -->
+    <%- partial('./google_analytics.ejs') %>
+    <%- partial('./umami_analytics.ejs') %>
+    <!-- styles -->
+    <%- css('css/style') %>
+    <!-- persian styles -->
+    <% if (theme.direction && theme.direction === 'rtl') { %>
+      <%- css('css/rtl') %>
+    <% } %>
+    <!-- rss -->
+    <% if (theme.rss === '' && config.feed && config.feed.path) { %>
+      <% theme.rss = config.feed.path %>
+    <% } %>
+    <% if (theme.rss) { %>
+      <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml" />
+    <% } %>
+	<!-- mathjax -->
+	<% if (theme.mathjax.enabled) {%>
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	<% } %>
+</head>

@@ -1,0 +1,4 @@
+<% var field_sort = theme.archive.sort_updated ? 'updated' : 'date' %>
+<% site.posts.sort(field_sort, 'desc').filter(function(post){ return !post.categories.findOne({name: 'short'}) && !post.categories.findOne({name: 'page'}); }).each(function(post) { %>
+<div><%= date(post.date, config.date_format) %> -- <a href="<%- url_for(post.path) %>"><%= post.title %></a></div>
+<% }); %>

@@ -1,0 +1,29 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <%- partial('_partial/post/gallery') %>
+  <div class="content e-content" itemprop="articleBody">
+    <%- page.content %>
+  </div>
+</article>
+<% if (page.categories && page.categories.findOne({name: 'short'})) { %>
+<%
+  var shortPosts = site.posts.filter(function(p){ return p.categories.findOne({name: 'short'}); }).sort('date', 'desc').toArray();
+  var currentIdx = shortPosts.findIndex(function(p){ return p.path === page.path; });
+  var prevPost = currentIdx < shortPosts.length - 1 ? shortPosts[currentIdx + 1] : null;
+  var nextPost = currentIdx > 0 ? shortPosts[currentIdx - 1] : null;
+%>
+<div style="margin-top: 1rem;">
+  <div style="border: 1px solid; display: inline-flex; gap: 0.8rem; padding: 0.15rem 0.6rem;">
+    <% if (prevPost) { %>
+      <a href="<%- url_for(prevPost.path) %>" style="text-decoration: none;">&lt;&lt;</a>
+    <% } else { %>
+      <span style="opacity: 0.3;">&lt;&lt;</span>
+    <% } %>
+    <% if (nextPost) { %>
+      <a href="<%- url_for(nextPost.path) %>" style="text-decoration: none;">&gt;&gt;</a>
+    <% } else { %>
+      <span style="opacity: 0.3;">&gt;&gt;</span>
+    <% } %>
+  </div>
+</div>
+<% } %>
+<%- partial('_partial/comments') %>
