@@ -1672,3 +1672,6 @@ code {
 .e-content > p:first-child {
   margin-top: 0;
 }
+#about > p:first-child {
+  margin-top: 0;
+}
