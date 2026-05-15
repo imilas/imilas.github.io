@@ -1669,3 +1669,6 @@ code {
 #header-post #actions .post-item p {
   margin-bottom: 0;
 }
+.e-content > p:first-child {
+  margin-top: 0;
+}
