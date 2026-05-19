@@ -7,13 +7,16 @@ categories: poem
 
   The green foliage, the jarring wisps of wind, the unwelcome company of endearing critters.
 
-  I miss the masked bowlegged friends, the idle threats and the clenced fists. I miss the cracked tar and the mephitic fumes.
+  I miss the bowlegged haords, the idle threats, the clenched fists.
 
-  Last night I dreamt I went up north again. Rested my bones amongst the glass shards and needles; let the
+  I miss the cracked stroads, the acrid fumes, the resplendent wrappers tumbling down the streets.  
+
+  In my dream I was traipsing up north again. Rested my bones amongst the glass shards and needles; let the
   soothing shrieks wash over me. 
 
-  I miss the quotidian communal outrage.
+  With every breath the fresh air poisons my lungs. Sitting on this branch
+  amongst the leaves has me feeling like a bird trapped in a cage. I look for graffiti tags amongst the lurid flowers to no avail. 
 
-  The starlit sky traps me in a kennel of endless possibilities. Leaves and butterflies smother the oaks like a cancer. With every breath, the fresh air poisons my lungs [\[1\]](https://uvb-76music.bandcamp.com/album/uvb76-027).
-
-  I miss the lively coughs, the roaming speakers, and the tattered engine belts. No more weeping lesions, no more tears of joy. 
+  I miss the lively coughs, the roaming speakers. The gentle screeches of  tattered engine belts. 
+ 
+  No more weeping lesions, no more tears of joy. 
