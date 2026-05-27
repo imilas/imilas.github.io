@@ -419,7 +419,7 @@ body table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 14px;
+  font-size: 12px;
   overflow: auto;
   display: block;
 }
@@ -428,7 +428,7 @@ body th {
   border-bottom: 1px dashed #908d8d;
   color: #eee;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
 }
 body td {
   padding: 0 8px;
@@ -501,7 +501,7 @@ body {
   background-color: #1d1f21;
   color: #c9cacc;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "JetBrains Mono", monospace;
   line-height: 1.4;
   text-rendering: geometricPrecision;
@@ -589,12 +589,12 @@ body {
   }
 }
 .max-width {
-  max-width: 65rem;
+  max-width: 80rem;
 }
 @media (max-width: 480px) {
   .px3 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .my4 {
     margin-top: 2rem;
@@ -648,7 +648,7 @@ body {
   letter-spacing: 0.01em;
   font-weight: 200;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   font-family: monospace;
 }
 #header #nav ul {
@@ -1413,7 +1413,7 @@ article .content .caption {
   color: #1d1f21;
   font-display: swap;
   font-weight: 400;
-  font-size: 12.8px;
+  font-size: 11.200000000000001px;
   font-family: "JetBrains Mono", monospace;
   line-height: 1.4;
   text-rendering: geometricPrecision;
