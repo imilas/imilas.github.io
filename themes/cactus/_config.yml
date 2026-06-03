@@ -17,8 +17,8 @@ nav:
   home: /
   publications: /publications/
   music: /music/
-  longer: /longer/
-  shorter: /short/
+  longer posts: /longer/
+  shorter posts: /short/
 
 
 # Links to your social media accounts.
@@ -127,7 +127,7 @@ favicon:
 colorscheme: dark
 
 # Maximal width of the page in rem units.
-page_width: 65
+page_width: 80
 
 
 ##############################################################################
@@ -135,7 +135,7 @@ page_width: 65
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:

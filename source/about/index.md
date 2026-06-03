@@ -2,9 +2,11 @@
 title: about
 date: 2023-01-10 15:17:42
 ---
-My name is Amir Salimi. I grew up in [IUT](https://en.wikipedia.org/wiki/Isfahan_University_of_Technology). Currently residing in Edmonton, Alberta.
+My name is Amir Salimi. I grew up in [IUT](https://en.wikipedia.org/wiki/Isfahan_University_of_Technology). Currently in Edmonton, Alberta.
 My research involves audio synthesis, machine learning, and data science.  
-I make music for big sound systems.  
+  
+I also make music for big sound systems.  
+  
 Currently a computing science PhD candidate at University of Alberta. My supervisors are [Abram Hindle](https://abramhindle.github.io/) and [Osmar Zaiane](https://webdocs.cs.ualberta.ca/~zaiane/). I hope to graduate by late 2026.  
 
 

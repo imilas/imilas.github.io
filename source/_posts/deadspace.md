@@ -1,6 +1,6 @@
 ---
-title: dead space
+title: ipad 9
 date: 2026-04-20 2:02:00
-categories: short
+categories: hidden 
 ---
-dead space 1? what's next, deadspace 2?
+bad company uk - the nine? what's next, bad company uk - the ten?

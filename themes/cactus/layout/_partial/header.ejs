@@ -24,7 +24,7 @@
       <% for (var i in theme.nav) { %><!--
      --><li><a href="<%- url_for(theme.nav[i]) %>"><span class="nav-bracket">[</span><%= __('nav.'+i).replace("nav.", "") %><span class="nav-bracket">]</span></a></li><!--
    --><% } %><!--
-   --><li><a href="/atom.xml"><span class="nav-bracket">[</span>rss<span class="nav-bracket">]</span></a></li>
+   --><li><a href="/atom.xml" style="color: #6a9f6a;"><span class="nav-bracket">[</span>rss feed<span class="nav-bracket">]</span></a></li>
     </ul>
   </div>
 </header>

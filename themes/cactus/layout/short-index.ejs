@@ -1,4 +1,4 @@
-<% var short_posts = site.posts.filter(function(post){ return post.categories.findOne({name: 'short'}); }).sort('date', 'desc'); %>
+<% var short_posts = site.posts.filter(function(post){ return (post.categories.findOne({name: 'short'}) || post.categories.findOne({name: 'comic'})) && !post.categories.findOne({name: 'hidden'}); }).sort('date', 'desc'); %>
 <% short_posts.each(function(post){ %>
 <div><%= date(post.date, config.date_format) %> -- <a href="<%- url_for(post.path) %>"><%= post.title %></a></div>
 <% }); %>

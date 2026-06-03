@@ -1,17 +1,11 @@
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <%- partial('_partial/post/gallery') %>
-  <div class="content e-content" itemprop="articleBody">
-    <%- page.content %>
-  </div>
-</article>
-<% if (page.categories && page.categories.findOne({name: 'short'})) { %>
+<% if (page.categories && (page.categories.findOne({name: 'short'}) || page.categories.findOne({name: 'comic'}))) { %>
 <%
-  var shortPosts = site.posts.filter(function(p){ return p.categories.findOne({name: 'short'}); }).sort('date', 'desc').toArray();
+  var shortPosts = site.posts.filter(function(p){ return (p.categories.findOne({name: 'short'}) || p.categories.findOne({name: 'comic'})) && !p.categories.findOne({name: 'hidden'}); }).sort('date', 'desc').toArray();
   var currentIdx = shortPosts.findIndex(function(p){ return p.path === page.path; });
   var prevPost = currentIdx < shortPosts.length - 1 ? shortPosts[currentIdx + 1] : null;
   var nextPost = currentIdx > 0 ? shortPosts[currentIdx - 1] : null;
 %>
-<div style="margin-top: 1rem;">
+<div style="margin-bottom: 1rem;">
   <div style="border: 1px solid; display: inline-flex; gap: 0.8rem; padding: 0.15rem 0.6rem;">
     <% if (prevPost) { %>
       <a href="<%- url_for(prevPost.path) %>" style="text-decoration: none;">&lt;&lt;</a>
@@ -26,4 +20,10 @@
   </div>
 </div>
 <% } %>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <%- partial('_partial/post/gallery') %>
+  <div class="content e-content" itemprop="articleBody">
+    <%- page.content %>
+  </div>
+</article>
 <%- partial('_partial/comments') %>

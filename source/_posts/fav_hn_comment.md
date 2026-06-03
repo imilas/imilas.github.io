@@ -1,6 +1,6 @@
 ---
 title: favorite HN comment
-date: 2026-03-29 12:00:00
+date: 2026-04-24 12:00:00
 categories: short
 ---
 
