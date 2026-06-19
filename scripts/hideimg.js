@@ -18,5 +18,5 @@ hexo.extend.tag.register('hideimg', function(args, content) {
     'img.style.display=img.style.display===\'none\'||!img.style.display?\'block\':\'none\';' +
     'return false;' +
     '">' + iconLabel + '</a>' +
-    '<span id="' + id + '" style="display:' + initialDisplay + ';text-align:center;">' + content + '</span>';
+    '<span id="' + id + '" class="hide-img-content" style="display:' + initialDisplay + ';text-align:center;">' + content + '</span>';
 }, { ends: true });

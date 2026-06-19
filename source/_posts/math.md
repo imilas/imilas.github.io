@@ -5,5 +5,5 @@ categories: short
 ---
 Math. Proofs. Lemmas.  
 Counting things. Rubik's cubes. Dice rolls.  
-Numbers having babies.
+Numbers. More numbers. Numbers having babies.
 

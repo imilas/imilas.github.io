@@ -1,5 +1,5 @@
 ---
-title: world foods
+title: ethnic aisle
 date: 2026-05-29
 categories: short
 ---
