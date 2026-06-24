@@ -1,6 +1,6 @@
 ---
-title: ipad 9
+title: counting joke
 date: 2026-04-20 2:02:00
 categories: hidden 
 ---
-bad company uk - the nine? what's next, bad company uk - the ten?
+deadspace 2, what's next, deadspace 3?
