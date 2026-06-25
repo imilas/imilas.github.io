@@ -1,7 +1,7 @@
 ---
 title: Crocker's Rules
 date: 2026-06-24
-category: short
+category: hidden 
 ---
-
-Crocker's rules are a series of rules. 
+dear dictionary, what does [complexword]-suffix mean?
+dictionary: well, [complexword]-suffix means "of or relating to word". Hope that helps :)

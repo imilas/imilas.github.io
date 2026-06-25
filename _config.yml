@@ -92,6 +92,7 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
+  - .nojekyll
 exclude:
 ignore:
 
@@ -118,6 +119,7 @@ deploy:
   type: git
   repo: git@github.com:imilas/imilas.github.io.git
   branch: gh-pages
+  ignore_hidden: false
 
 mathjax:
   tags: none # or 'ams' or 'all'
