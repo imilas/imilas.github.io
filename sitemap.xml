@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.madewithdrama.love/stress_out/</loc>
+    <loc>https://www.madewithdrama.love/need4speed/</loc>
     
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -238,7 +238,7 @@
 
   <url>
     <loc>https://www.madewithdrama.love/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -246,7 +246,7 @@
   
   <url>
     <loc>https://www.madewithdrama.love/tags/jax-normalizing-flows/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -255,28 +255,28 @@
   
   <url>
     <loc>https://www.madewithdrama.love/categories/short/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/poem/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/hidden/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/page/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
