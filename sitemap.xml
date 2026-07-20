@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.madewithdrama.love/cilantro_gene/</loc>
+    
+    <lastmod>2026-07-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.madewithdrama.love/diaperion/</loc>
     
     <lastmod>2026-07-20</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://www.madewithdrama.love/need4speed/</loc>
     
     <lastmod>2026-07-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.madewithdrama.love/cilantro_gene/</loc>
-    
-    <lastmod>2026-07-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
