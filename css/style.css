@@ -1675,6 +1675,13 @@ code {
 #about > p:first-child {
   margin-top: 0;
 }
+.hide-img-content {
+  display: block;
+  text-align: center;
+}
+.hide-img-content.hide-img-collapsed {
+  display: none;
+}
 .hide-img-content img {
   max-width: 500px !important;
   width: 100% !important;
