@@ -19,8 +19,8 @@
     <content>
       <![CDATA[<details class="hide-img" open><summary>beckoned 🖼</summary><div style="text-align:center;"><img src="https://www.madewithdrama.love/images/beckoned.png" alt="des" width="400"></div></details>]]>
     </content>
-    <id>https://www.madewithdrama.love/apple_tree/</id>
-    <link href="https://www.madewithdrama.love/apple_tree/"/>
+    <id>https://www.madewithdrama.love/beckoned/</id>
+    <link href="https://www.madewithdrama.love/beckoned/"/>
     <published>2026-07-23T06:00:00.000Z</published>
     <summary>
       <![CDATA[<details class="hide-img" open><summary>beckoned 🖼</summary><div style="text-align:center;"><img src="https://www.madewithdrama.love/images/beckoned.png" alt="des" width]]>
@@ -231,13 +231,13 @@ and released it next to my feet. The mouse ran off and crawled into a]]>
     </author>
     <category term="short" scheme="https://www.madewithdrama.love/categories/short/"/>
     <content>
-      <![CDATA[<div style="max-width:500px;width:100%;margin:0 auto;text-align:center;"><div style="text-align:left;"><a href="#" class="v-jykz6fiz4-tab" data-idx="0" style="margin-right:0.6rem;text-decoration:none;font-weight:700;color:#c9cacc;" onclick="document.querySelectorAll('.v-jykz6fiz4-content').forEach(function(el){el.style.display='none'});document.getElementById('v-jykz6fiz4-'+this.dataset.idx).style.display='block';document.querySelectorAll('.v-jykz6fiz4-tab').forEach(function(el){el.style.fontWeight='400';el.style.color='#6ba3f5'});this.style.fontWeight='700';this.style.color='#c9cacc';return false;">[version1]</a><a href="#" class="v-jykz6fiz4-tab" data-idx="1" style="margin-right:0.6rem;text-decoration:none;font-weight:400;color:#6ba3f5;" onclick="document.querySelectorAll('.v-jykz6fiz4-content').forEach(function(el){el.style.display='none'});document.getElementById('v-jykz6fiz4-'+this.dataset.idx).style.display='block';document.querySelectorAll('.v-jykz6fiz4-tab').forEach(function(el){el.style.fontWeight='400';el.style.color='#6ba3f5'});this.style.fontWeight='700';this.style.color='#c9cacc';return false;">[version2]</a></div><div id="v-jykz6fiz4-0" class="v-jykz6fiz4-content" style="display:block;"><img src="https://www.madewithdrama.love/images/runintoexday_v1.png" style="max-width:500px;width:100%;height:auto;"></div><div id="v-jykz6fiz4-1" class="v-jykz6fiz4-content" style="display:none;"><img src="https://www.madewithdrama.love/images/runintoexday_v2.png" style="max-width:500px;width:100%;height:auto;"></div></div>]]>
+      <![CDATA[<div style="max-width:500px;width:100%;margin:0 auto;text-align:center;"><div style="text-align:left;"><a href="#" class="v-dt0cqbbpp-tab" data-idx="0" style="margin-right:0.6rem;text-decoration:none;font-weight:700;color:#c9cacc;" onclick="document.querySelectorAll('.v-dt0cqbbpp-content').forEach(function(el){el.style.display='none'});document.getElementById('v-dt0cqbbpp-'+this.dataset.idx).style.display='block';document.querySelectorAll('.v-dt0cqbbpp-tab').forEach(function(el){el.style.fontWeight='400';el.style.color='#6ba3f5'});this.style.fontWeight='700';this.style.color='#c9cacc';return false;">[version1]</a><a href="#" class="v-dt0cqbbpp-tab" data-idx="1" style="margin-right:0.6rem;text-decoration:none;font-weight:400;color:#6ba3f5;" onclick="document.querySelectorAll('.v-dt0cqbbpp-content').forEach(function(el){el.style.display='none'});document.getElementById('v-dt0cqbbpp-'+this.dataset.idx).style.display='block';document.querySelectorAll('.v-dt0cqbbpp-tab').forEach(function(el){el.style.fontWeight='400';el.style.color='#6ba3f5'});this.style.fontWeight='700';this.style.color='#c9cacc';return false;">[version2]</a></div><div id="v-dt0cqbbpp-0" class="v-dt0cqbbpp-content" style="display:block;"><img src="https://www.madewithdrama.love/images/runintoexday_v1.png" style="max-width:500px;width:100%;height:auto;"></div><div id="v-dt0cqbbpp-1" class="v-dt0cqbbpp-content" style="display:none;"><img src="https://www.madewithdrama.love/images/runintoexday_v2.png" style="max-width:500px;width:100%;height:auto;"></div></div>]]>
     </content>
     <id>https://www.madewithdrama.love/run_into_ex_day/</id>
     <link href="https://www.madewithdrama.love/run_into_ex_day/"/>
     <published>2026-06-05T06:00:00.000Z</published>
     <summary>
-      <![CDATA[<div style="max-width:500px;width:100%;margin:0 auto;text-align:center;"><div style="text-align:left;"><a href="#" class="v-jykz6fiz4-tab" d]]>
+      <![CDATA[<div style="max-width:500px;width:100%;margin:0 auto;text-align:center;"><div style="text-align:left;"><a href="#" class="v-dt0cqbbpp-tab" d]]>
     </summary>
     <title>run into ex day</title>
     <updated>2026-06-05T19:46:39.198Z</updated>
