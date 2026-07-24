@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.madewithdrama.love/baby_mouse/</loc>
+    
+    <lastmod>2026-07-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.madewithdrama.love/the_quill_beckons/</loc>
     
     <lastmod>2026-07-23</lastmod>
@@ -59,24 +68,6 @@
     <loc>https://www.madewithdrama.love/clown_tune/</loc>
     
     <lastmod>2026-06-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.madewithdrama.love/on_yearning/</loc>
-    
-    <lastmod>2026-06-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.madewithdrama.love/baby_mouse/</loc>
-    
-    <lastmod>2026-06-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
