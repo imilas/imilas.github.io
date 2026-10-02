@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.madewithdrama.love/kb/</loc>
+    
+    <lastmod>2026-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.madewithdrama.love/coffee/</loc>
     
     <lastmod>2026-09-02</lastmod>
@@ -113,15 +122,6 @@
     <loc>https://www.madewithdrama.love/run_into_ex_day/</loc>
     
     <lastmod>2026-06-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.madewithdrama.love/math/</loc>
-    
-    <lastmod>2026-06-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -256,7 +256,7 @@
 
   <url>
     <loc>https://www.madewithdrama.love/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -264,7 +264,7 @@
   
   <url>
     <loc>https://www.madewithdrama.love/tags/jax-normalizing-flows/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -273,28 +273,28 @@
   
   <url>
     <loc>https://www.madewithdrama.love/categories/short/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/poem/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/hidden/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.madewithdrama.love/categories/page/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
